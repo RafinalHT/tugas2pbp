@@ -9,4 +9,4 @@ _Virtual environment_ adalah alat yang dapat kita gunakan untuk menjaga _depende
 
 ## Cara implementasi poin 1-4
 ### Poin 1
-Membuat fungsi 'show_katalog' dengan parameter _request_ didalam _views.py_
+Membuat fungsi `show_katalog` dengan parameter _request_ didalam _views.py_
