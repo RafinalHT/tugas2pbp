@@ -16,4 +16,5 @@ Menambahkan `path('', show_katalog, name='show_katalog'),` dalam file `urls.py` 
 Pada file `katalog.html`, tambahkan looping untuk mengambil data-data yang ada di `list_katalog` dan _print_ data-data tersebut sesuai urutan tabel
 ### Poin 4
 Buatlah app pada Heroku dan tambahkan dua secrets didalam repository yaitu `HEROKU_APP_NAME` dan `HEROKU_API_KEY` untuk menghubungkan github ke heroku. Jika sudah ditambahkan, _project_ dapat dilihat di aplikasi heroku seperti ini:
+
 ![image](https://user-images.githubusercontent.com/89496855/190291295-07a2e69c-c408-4cde-8fdf-f75702de8d82.png)
