@@ -1,6 +1,6 @@
 # Tugas 2 PBP
 
-[App Link](https://fikri-belum-sembuh.herokuapp.com/katalog/)
+App link to [Heroku](https://fikri-belum-sembuh.herokuapp.com/katalog/)
 
 ## Bagan yang berisi request client ke web aplikasi berbasis Django
 
