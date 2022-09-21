@@ -1,0 +1,134 @@
+[
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 1,
+        "fields": {
+            "watched": true,
+            "title": "Avengers: Endgame",
+            "rating": 5,
+            "release_date": "2019-04-24",
+            "review": "Masterpiece of the Marvel Universe"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 2,
+        "fields": {
+            "watched": true,
+            "title": "Rush Hour",
+            "rating": 4,
+            "release_date": "1998-09-18",
+            "review": "A very funny movie about two cops from a different nation"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 3,
+        "fields": {
+            "watched": false,
+            "title": "KKN di Desa Penari",
+            "rating": 4,
+            "release_date": "2022-04-30",
+            "review": "An Indonesian horror movie adopted from twitter"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 4,
+        "fields": {
+            "watched": true,
+            "title": "The Hitman's Bodyguard",
+            "rating": 4,
+            "release_date": "2017-08-17",
+            "review": "A comedy movie about a hitman and his bodyguard"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 5,
+        "fields": {
+            "watched": true,
+            "title": "The Amazing Spider-Man 2",
+            "rating": 3,
+            "release_date": "2014-04-30",
+            "review": "The sequel for The Amazing Spider-man"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 6,
+        "fields": {
+            "watched": false,
+            "title": "Mr. & Mrs. Smith",
+            "rating": 4,
+            "release_date": "2005-06-09",
+            "review": "A movie about an average-on-the-surface couple who shares the same undercover line of work"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 7,
+        "fields": {
+            "watched": true,
+            "title": "John Wick: Chapter 3 - Parabellum",
+            "rating": 5,
+            "release_date": "2019-05-17",
+            "review": "The journey of John Wick after he was branded 'Excommunicado'"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 8,
+        "fields": {
+            "watched": true,
+            "title": "Johnny English Reborn",
+            "rating": 4,
+            "release_date": "2011-10-07",
+            "review": "A comedy movie about an agent who returns from training to carry out his missions"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 9,
+        "fields": {
+            "watched": true,
+            "title": "Transformers: The Last Knight",
+            "rating": 5,
+            "release_date": "2017-06-21",
+            "review": "The fifth series of the Transformers where the creator of the transformer in the movies wished for the earth downfall"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 10,
+        "fields": {
+            "watched": true,
+            "title": "The Dark Knight",
+            "rating": 5,
+            "release_date": "2008-07-18",
+            "review": "A Batman movie where a villain named The Joker appears to threaten Gotham"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 11,
+        "fields": {
+            "watched": true,
+            "title": "Red Notice",
+            "rating": 4,
+            "release_date": "2021-11-04",
+            "review": "A comedy movie where an agent from FBI pursuing the world's most wanted art thief becomes the art thief partner to catch an elusive crook who's always one step ahead"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 12,
+        "fields": {
+            "watched": true,
+            "title": "Power Rangers",
+            "rating": 3,
+            "release_date": "2017-03-22",
+            "review": "Bunch of college students accidentally found an object that makes them powerful enough to stop the destruction of earth"
+        }
+    }
+]
