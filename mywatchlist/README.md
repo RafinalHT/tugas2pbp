@@ -26,7 +26,7 @@ Pembangunan suatu platform pasti membutuhkan pertukaran data seperti pertukaran 
 7. Migrate perubahan yang dilakukan dan lakukan perintah `python manage.py loaddata initial_wishlist_data.json`
 
 
-#URLS Postman
+# URLS Postman
 
 HTML
 ![html](https://user-images.githubusercontent.com/89496855/191543190-8c98cea4-5205-4b6f-80f0-853151990d34.png)
