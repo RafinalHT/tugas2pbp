@@ -18,5 +18,12 @@ Pengguna mengisi submisi form lalu menekan tombol submit untuk mengirimkan HTTP 
   3. Dalam folder todolist, buatlah model Task di file `models.py` dengan atribut yang sesuai pada soal
   4. Mengimplementasikan form registrasi, login, dan logout dari tutorial 3
   5. Membuat file html `todolist.html` dan menambahkan fungsi pada `views.py` yang berfungsi untuk menampilkan data yang telah dimasukkan pengguna, tombol logout, dan opsi untuk membuat task baru
-  6. 
+  6. Membuat file html `create-task.html` untuk tampilan membuat task baru dimana pengguna dapat memberikan input judul dan deskripsi task yang ingin ditambah.
+  7. Membuat routing pada file `urls.py` untuk fungsi pada file `views.py`
+  8. Push kode final ke Github dan deploy ke Heroku dengan mengisi Secret pada repo
+  9. Membuat dua akun pengguna menggunakan _superuser_ dan membuat tiga task pada setiap user pada aplikasi Heroku.
+  
+  <img width="907" alt="image" src="https://user-images.githubusercontent.com/89496855/192922617-48223920-4b5a-4951-9bf4-ce8e08ff0d5f.png">
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/89496855/192922678-a9f3d937-ae03-44e4-b5cf-965e8c30927a.png">
+
   
