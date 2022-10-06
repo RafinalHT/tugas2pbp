@@ -15,16 +15,16 @@ External CSS : Efektif digunakan untuk pembuatan _website_ dalam ukuran besar (a
 
 ## Jelaskan tag HTML5 yang kamu ketahui.
 Tag :
-1. <!DOCTYPE> , untuk menentukan tipe dokumen
-2. <html> , untuk membuat dokumen HTML
-3. <title>, untuk judul suatu page
-4. <p> , untuk menuliskan paragraf pada page
-5. <h1>...<h6> , untuk heading suatu page
-6. <br> , untuk membuat baris kosong
-7. <!--...--> , untuk menuliskan komen
-8. <form> , untuk membuat form input bagi user
-9. <input> , untuk input user
-10. <button> , untuk tombol yang dapat di klik user
+1. `<!DOCTYPE>` , untuk menentukan tipe dokumen
+2. `<html>` , untuk membuat dokumen HTML
+3. `<title>` , untuk judul suatu page
+4. `<p>` , untuk menuliskan paragraf pada page
+5. `<h1>`...`<h6>` , untuk heading suatu page
+6. `<br>` , untuk membuat baris kosong
+7. `<!--...-->` , untuk menuliskan komen
+8. `<form>` , untuk membuat form input bagi user
+9. `<input>` , untuk input user
+10. `<button>` , untuk tombol yang dapat di klik user
 
 ## Jelaskan tipe-tipe CSS selector yang kamu ketahui.
 1. Simple Selectors , memilih elemen untuk di _style_ berdasarkan nama, id, atau class
