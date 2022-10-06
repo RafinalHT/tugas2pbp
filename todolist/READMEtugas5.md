@@ -30,6 +30,9 @@ Tag :
 1. Simple Selectors , memilih elemen untuk di _style_ berdasarkan nama, id, atau class
 2. Attribute Selectors , memilih elemen untuk di _style_ berdasarkan atribut atau nilainya
 3. Element Selectors, memilih elemen untuk di _style_ berdasarkan nama elemen tersebut
-## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 
-  
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+1. Menambahkan bootstrap ke base.html
+2. Menggunakan External CSS dengan membuat folder `static` yang berisi file CSS yang akan digunakan
+3. Men-_design_ page menggunakan CSS dan Bootstrap
+4. Menggunakan _media query_ untuk membuat page menjadi responsive
