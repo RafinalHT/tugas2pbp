@@ -14,7 +14,7 @@
     <form class="form-register w-100 m-auto" method="POST">
 
         {% csrf_token %}
-        <h1>Registrasi Akun</h1>
+        <h1 style="font-family: 'Courier New', monospace;">Registrasi Akun</h1>
 
         {% if form.errors %}
             {% for field in form %}
