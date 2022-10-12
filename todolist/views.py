@@ -4,11 +4,13 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
-from django.http import HttpResponse, HttpResponseRedirect, response
+from django.http import HttpResponse, HttpResponseRedirect, HttpResponseNotFound
 from django.urls import reverse
+from django.core import serializers
 
 from todolist.forms import TaskForm
 from .models import Task
+
 
 def register(request):
     form = UserCreationForm()
@@ -20,8 +22,9 @@ def register(request):
             messages.success(request, 'Akun telah berhasil dibuat!')
             return redirect('todolist:login')
 
-    context = {'form':form}
+    context = {'form': form}
     return render(request, 'register.html', context)
+
 
 def login_user(request):
     if request.method == 'POST':
@@ -38,13 +41,15 @@ def login_user(request):
     context = {}
     return render(request, 'login.html', context)
 
+
 def logout_user(request):
     logout(request)
     return redirect('todolist:login')
 
+
 @login_required(login_url='/todolist/login/')
 def show_todolist(request):
-    try: 
+    try:
         user = request.user
         data = Task.objects.filter(user=user)
         context = {
@@ -55,6 +60,7 @@ def show_todolist(request):
         return render(request, "todolist.html", context)
     except KeyError:
         return redirect('todolist:login')
+
 
 @login_required(login_url='/todolist/login/')
 def create_task(request):
@@ -71,23 +77,40 @@ def create_task(request):
     else:
         form = TaskForm()
 
-        return render(request, 'create-task.html', {'form':form})
+        return render(request, 'create-task.html', {'form': form})
 
-@login_required(login_url='/todolist/login/')
-def task_selesai(request, pk):
-    task = Task.objects.filter(id=pk).first()
-    task.is_finished = True
-    task.save()
-    return HttpResponseRedirect(reverse("todolist:show_todolist"))
-
-@login_required(login_url='/todolist/login/')
-def undo_task(request, pk):
-    task = Task.objects.filter(id=pk).first()
-    task.is_finished = False
-    task.save()
-    return HttpResponseRedirect(reverse("todolist:show_todolist"))
 
 @login_required(login_url='/todolist/login/')
 def hapus_task(request, pk):
     Task.objects.filter(id=pk).first().delete()
     return HttpResponseRedirect(reverse("todolist:show_todolist"))
+
+
+@login_required(login_url='/todolist/login/')
+def change_status(request, pk):
+    task = Task.objects.filter(id=pk).first()
+    task.is_finished = task.is_finished ^ True
+    task.save()
+    return HttpResponse(b"CHANGED", status=201)
+
+
+@login_required(login_url='/todolist/login/')
+def show_json(request):
+    user = request.user
+    data = Task.objects.filter(user=user)
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+
+
+@login_required(login_url='/todolist/login/')
+def add_task(request):
+    if request.method == 'POST':
+        form = TaskForm(request.POST)
+
+        form.instance.user = request.user
+        form.instance.date = datetime.datetime.now()
+
+        if form.is_valid():
+            form.save()
+            return HttpResponse(b"CREATED", status=201)
+
+    return HttpResponseNotFound()

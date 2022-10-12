@@ -9,7 +9,8 @@ urlpatterns = [
     path('login/', login_user, name='login'),
     path('logout/', logout_user, name='logout'),
     path('create-task/', create_task, name='create-task'),
-    path('selesai/<int:pk>', task_selesai, name='task-selesai'),
-    path('undo/<int:pk>', undo_task, name='undo-task'),
     path('hapus/<int:pk>', hapus_task, name='hapus-task'),
+    path('add/', add_task, name='add_task'),
+    path('change-status/<int:pk>', change_status, name='change-status'),
+    path('json', show_json, name='show_json'),
 ]
