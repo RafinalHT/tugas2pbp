@@ -24,3 +24,5 @@ Penerapan _asynchronous programming_ ada pada tombol create task dimana jika pen
 6. Membuat routing untuk fungsi tersebut didalam file `urls.py`
 7. Membuat fungsi addTodolist dalam `script` untuk memanggil fungsi pada `views.py`
 8. Membuat fungsi `refreshTodolist` untuk refresh halaman utama secara asinkronus  
+
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/89496855/195484805-90796675-10b9-461a-b9c1-bd0643bf0655.png">
